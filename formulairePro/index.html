@@ -28,7 +28,7 @@
             </nav>
         </header>
     </div>
-<!-- La nav a un style et une color (orange) par défaut, et est vide en attendant -->
+    <!-- La nav a un style et une color (orange) par défaut, et est vide en attendant -->
 
 
     <main>
@@ -317,13 +317,77 @@
                         <input type="text" class="form-control" placeholder="Dispositif utilisé 2">
                     </div>
                 </div>
-<!-- Demander à Ronan si Formation et VAE sont les seuls dispositifs possibles, nous pourrons alors changer ces forms par des radios, et raccourcir le titre de la partie  -->
-<!-- Ici, il faudrais aussi faire un tableau avec ces forms, radios et dates comme dans le formulaire papier, page 6 (les afficher en ligne) -->
+                <!-- Demander à Ronan si Formation et VAE sont les seuls dispositifs possibles, nous pourrons alors changer ces forms par des radios, et raccourcir le titre de la partie  -->
+                <!-- Ici, il faudrais aussi faire un tableau avec ces forms, radios et dates comme dans le formulaire papier, page 6 (les afficher en ligne) -->
 
 
-            </form>
 
-        </fieldset>
+                <fieldset>
+                    <legend>Durant les 6 dernières années, avez vous bénéficié d'une progression salariale ou
+                        professionnelle ?</legend>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="progressionOui" id="progressionOui"
+                            value="Oui">
+                        <label class="form-check-label" for="progressionOui">Oui</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="progressionNon" id="progressionNon"
+                            value="Oui">
+                        <label class="form-check-label" for="progressionNon">Non</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dateAugmentation1">Date de l'augmentation</label>
+                        <div>
+                            <input class="form-control" type="date" value="2021-01-01" id="dateAugmentation1">
+
+                        </div>
+
+                        <div>
+                            <input type="text" class="form-control" placeholder="Pourcentage d'augmentation"
+                                id="pourcentage1">
+                        </div>
+
+                        <label for="dateAugmentation2" class="">Date de l'augmentation</label>
+                        <div>
+                            <input class="form-control" type="date" value="2021-01-01" id="dateAugmentation2">
+                        </div>
+
+                        <div>
+                            <input type="text" class="form-control" placeholder="Pourcentage d'augmentation"
+                                id="pourcentage2">
+                        </div>
+
+
+                        <label for="dateAugmentation3" class="">Date de l'augmentation</label>
+                        <div>
+                            <input class="form-control" type="date" value="2021-01-01" id="dateAugmentation3">
+                        </div>
+
+                        <div>
+                            <input type="text" class="form-control" placeholder="Pourcentage d'augmentation"
+                                id="pourcentage3">
+                        </div>
+
+
+                        <label for="dateAugmentation4" class="">Date de l'augmentation</label>
+                        <div>
+                            <input class="form-control" type="date" value="2021-01-01" id="dateAugmentation4">
+                        </div>
+
+                        <div>
+                            <input type="text" class="form-control" placeholder="Pourcentage d'augmentation"
+                                id="pourcentage4">
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+<!-- Ici, la signature était demandée -->
 
 
     </main>
@@ -352,5 +416,6 @@
 </script>
 
 <script src="js/main.js"></script>
+<!-- Je ne pense pas que ces script servent encore, mais je les ai laissé pour l'instant, à voir plus tard si on les retire -->
 
 </html>
