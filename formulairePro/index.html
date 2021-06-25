@@ -8,8 +8,10 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/formulairePro/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/formulairePro/css/main.css">
+    <link rel="stylesheet" href="/formulairePro/css/normalize.css">
+    <link rel="stylesheet" href="/formulairePro/css/style.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -33,24 +35,22 @@
 
     <main>
         <!-- RADIO  -->
-        <fieldset>
+        <fieldset >
             <legend>Avez vous bénéficié d'une progression salariale ?</legend>
-            <div class="form-check form-check-inline">
+            <div class="form-check form-check-inline text-center">
                 <input class="form-check-input" type="radio" name="progSalarialeOUI" id="progSalarialeOui" value="Oui">
                 <label class="form-check-label" for="progSalarialeOui">Oui</label>
-            </div>
-            <div class="form-check form-check-inline">
+ 
                 <input class="form-check-input" type="radio" name="progSalarialeNon" id="progSalarialeNon" value="Non">
                 <label class="form-check-label" for="progSalarialeNo">Non</label>
             </div>
 
             <legend>Avez vous bénéficié d'une progression professionnelle?</legend>
 
-            <div class="form-check form-check-inline">
+            <div class="form-check form-check-inline text-center">
                 <input class="form-check-input" type="radio" name="progProOui" id="progProOui" value="Oui">
                 <label class="form-check-label" for="progProOui">Oui</label>
-            </div>
-            <div class="form-check form-check-inline">
+
                 <input class="form-check-input" type="radio" name="progProNon" id="progProNon" value="Non">
                 <label class="form-check-label" for="progProNo">Non</label>
             </div>
@@ -58,6 +58,8 @@
 
 
         <!-- Tableau/formulaire -->
+       <fieldset>
+        <h2>Besoins en formation/certifications (pour les 2 ans à venir)</h2>
         <form>
             <div class="form-group">
                 <p>Objectif visé</p>
@@ -74,8 +76,10 @@
 
 
         </form>
+        </fieldset>
 
-        <!-- H2 car la page commence sans titre sur le formulaire papier -->
+
+<fieldset>
         <h2>Perspectives professionnelles</h2>
         <form>
             <div class="form-group">
@@ -89,8 +93,10 @@
             </div>
 
         </form>
+    </fieldset>
 
         <!-- La synthèse étant à remplir avec le collaborateur et le manager, il me parrait étrange et compliqué de faire seul une synthese du formulaire, à discuter avec Ronan (je l'ai quand même mise cela dit) -->
+        <fieldset>
         <h2>Synthèse</h2>
         <form>
             <div class="form-group">
@@ -99,13 +105,15 @@
                 <textarea class="form-control" id="commentaires" rows="3" cols="30"></textarea>
             </div>
         </form>
+    </fieldset>
 
+    <fieldset>
         <h2>État des lieux récapitulatif</h2>
 
 
-        <fieldset>
-            <legend>Durant les 6 dernières années, avez-vous bénéficié d'au moins 3
-                entretiens professionnels (incluant celui-ci) ?</legend>
+        
+            <p>Durant les 6 dernières années, avez-vous bénéficié d'au moins 3
+                entretiens professionnels (incluant celui-ci) ?</p>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="entretiensOui" id="entretiensOui" value="Oui">
                 <label class="form-check-label" for="entretiensOui">Oui</label>
@@ -133,11 +141,11 @@
             </div>
             <!-- Ici, si l'on supprime "value="2021-01-01" cela affiche "jj/mm/yyyy" dans le champs à la place de la date prédéfinie  -->
 
-        </fieldset>
+        
 
 
-        <fieldset>
-            <legend>Durant les 6 dernières années, avez vous suivi au moins une formation ?</legend>
+        
+            <p>Durant les 6 dernières années, avez vous suivi au moins une formation ?</p>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="formationOui" id="formationOui" value="Oui">
                 <label class="form-check-label" for="formationOui">Oui</label>
@@ -255,9 +263,9 @@
 
 
         <fieldset>
-            <legend>Durant les 6 dernières années, avez vous acquis un des éléments de certification professionnelle
+            <p>Durant les 6 dernières années, avez vous acquis un des éléments de certification professionnelle
                 (diplôme, titre professionnel...) par la formation ou par une validation des acquis de l'expérience
-                (VAE) ?</legend>
+                (VAE) ?</p>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="certificationOui" id="certificationOui" value="Oui">
                 <label class="form-check-label" for="certificationOui">Oui</label>
@@ -322,7 +330,7 @@
 
 
 
-                <fieldset>
+                
                     <legend>Durant les 6 dernières années, avez vous bénéficié d'une progression salariale ou
                         professionnelle ?</legend>
 
